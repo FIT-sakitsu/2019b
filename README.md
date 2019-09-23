@@ -1,8 +1,8 @@
 # FIT2019b
 2019年秋学期 情報基礎2授業課題提出用repository
 
-[情報基礎2 授業ページ](https://ipl.sfc.keio.ac.jp/text/info2-2019-9/)
-[情報基礎2 2019秋学期 githubリポジトリ](https://github.com/FIT-sakitsu/2019b)
+- [情報基礎2 授業ページ](https://ipl.sfc.keio.ac.jp/text/info2-2019-9/)
+- [情報基礎2 2019秋学期 githubリポジトリ](https://github.com/FIT-sakitsu/2019b)
 
 ## 環境構築
 ### githubアカウントを作成
@@ -16,7 +16,6 @@
 2. 授業課題用フォルダを作成 ```mkdir -p ~/FIT2```
 3. 授業課題用フォルダに移動 ```cd ~/FIT2```
 4. gitリポジトリをclone ```git clone https://github.com/FIT-sakitsu/2019b```
-5. cloneしたリポジトリに移動 ```cd 2019b```
 
 ## 課題を提出する
 ### 作業用ブランチを作成
