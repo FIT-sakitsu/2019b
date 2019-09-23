@@ -7,9 +7,9 @@
 ## 環境構築
 ### githubアカウントを作成
 1. [github.com](https://github.com/) にアクセスしてアカウントを作成
+    1. 社会人になっても使う可能性があるため、アカウント名はログイン名以外にしたほうが得策です
 2. 作成したアカウント名を担当教員にメール[sakitsu@sfc.keio.ac.jp](mailto:sakitsu@sfc.keio.ac.jp)で共有してください
-
-→ 課題提出用repositoryへのアクセス権限を付与します
+    1. 課題提出用repositoryへのアクセス権限を付与します
 
 ### リポジトリをclone
 1. ターミナルを起動
