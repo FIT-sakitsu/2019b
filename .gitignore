@@ -93,3 +93,6 @@ modules.xml
 # for Mac OS
 .DS_Store
 ._*
+
+# for vscode settings file
+.vscode/
