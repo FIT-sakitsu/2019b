@@ -1,0 +1,20 @@
+h1{
+  border: 3px solid #df405a;
+  border-style:dashed;
+  font-style: oblique;
+}
+table{
+  border-collapse: collapse;
+  border-color: #a79c8e;
+  background-color: #f8ecc9;
+  text-align: center;
+}
+th{
+  font-weight: bold;
+  border: 2px solid #eb9f9f;
+  background-color: #f1bbba;
+}
+td{
+  border: 2px solid #a79c8e;
+  border-style: dotted;
+}
