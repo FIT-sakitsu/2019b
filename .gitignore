@@ -90,5 +90,9 @@ modules.xml
 
 # End of https://www.gitignore.io/api/intellij+all
 
-# ignore vscode settings file
+# for Mac OS
+.DS_Store
+._*
+
+# for vscode settings file
 .vscode/
