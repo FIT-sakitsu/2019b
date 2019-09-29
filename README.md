@@ -36,7 +36,7 @@
 2. リポジトリに移動する```cd ~/FIT2/2019b```
 3. 作成したファイルをgitに追加```git add .```
 4. ファイルをコミット```git commit -m 'ex01を作成'```
-    １． `ex01を作成` は適切なメッセージに適宜置換
+    1. `ex01を作成` は適切なメッセージに適宜置換
 5. ```git push --set-upstream origin ex01/t09415is```
     1. ex01/t09415is 部は 3. で作成したブランチ名に適宜置換
 6. [情報基礎2 2019秋学期 githubリポジトリ](https://github.com/FIT-sakitsu/2019b) を開く
