@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ex02-2</title>
+  </head>
+  <body>
+    <button onclick="zero();" type="button" name="button">
+      '0にする'
+    </button>
+    <button onclick="plus1();" type="button" name="button">
+      '1増やす'
+    </button>
+    <button onclick="minus1();" type="button" name="button">
+      '1減らす'
+    </button>
+    <button onclick="double();" type="button" name="button">
+      '2倍する'
+    </button>
+    <button onclick="half();" type="button" name="button">
+      '1/2する'
+    </button>
+    <script src="ex02-3.js" charset="utf-8"></script>
+  </body>
+</html>
