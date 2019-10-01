@@ -42,5 +42,5 @@
 6. [情報基礎2 2019秋学期 githubリポジトリ](https://github.com/FIT-sakitsu/2019b) を開く
 7. Pull request作成ボタンが表示されるのでクリック
 ![参考画像](https://user-images.githubusercontent.com/2434962/65457116-ce059600-de85-11e9-907c-1d7bbbdc9bcb.png "参考画像")
-8. タイトルとLabelを設定修正して提出
+8. タイトルとLabelを設定修正して課題を提出
 ![参考画像](https://user-images.githubusercontent.com/55714483/65457734-2e490780-de87-11e9-8523-f4f7af2fdc89.png "参考画像")
