@@ -1,0 +1,8 @@
+table,
+th,
+td {
+  border: 1.5px #000000 solid;
+}
+.important {
+  color: red;
+}
