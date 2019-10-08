@@ -2,26 +2,25 @@ var current = 0
 
 function syokyo() {
   current = 0
-  alert(currrent)
+  alert(current)
 }
 
 function tasu() {
   current += 1
-  alert(currrent)
+  alert(current)
 }
 
 function hiku() {
   current -= 1
-  alert(currrent)
+  alert(current)
 }
-
 
 function nibai() {
   current *= 2
-  alert(currrent)
+  alert(current)
 }
 
 function hanbunko() {
   current /= 2
-  alert(currrent)
+  alert(current)
 }

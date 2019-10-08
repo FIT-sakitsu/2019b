@@ -1,3 +1,3 @@
 function showmessage() {
-alert('こんにちは')
+  alert('こんにちは')
 }
