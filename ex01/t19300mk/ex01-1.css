@@ -4,3 +4,9 @@ h1 {
 th {
   color: blue;
 }
+table {
+  border: 1px;
+  width: 500px;
+  padding: 5px;
+  border-color: #333333;
+}
