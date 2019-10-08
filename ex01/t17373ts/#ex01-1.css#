@@ -1,0 +1,5 @@
+Tr,
+th,
+td {
+  border: 2px #808080 solid;
+}
