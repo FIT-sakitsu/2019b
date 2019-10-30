@@ -1,23 +1,22 @@
-function reset() {
-  var resets = document.getElementById('reset')
-
-  for (var i = 0; i < elements.length; i++) {
-    resets[i].innerHTML = '要素' + (i + 1)
+function revert() {
+  var pAll = document.getElementsByTagName('p')
+  for (var i = 0; i < pAll.length; i += 1) {
+    pAll[i].innerHTML = '要素' + (i + 1)
   }
+}
 
-  function ccc() {
-    var ccctext = document.getElementById('text').value
-    var elements = document.getElementsByClassName('ccc')
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].innerHTML = ccctext
-    }
+function changec() {
+  var content = document.getElementById('text').value
+  var len = document.getElementsByClassName('ccc').length
+  for (var i = 0; i < len; i += 1) {
+    document.getElementsByClassName('ccc')[i].innerHTML = content
+  }
+}
 
-    function aaabbb() {
-      var abtext = document.getElementById('text').value
-      var elements = document.getElementsByClassName('ab')
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].innerHTML = abtext
-      }
-    }
+function changeab() {
+  var content = document.getElementById('text').value
+  var len = document.getElementsByClassName('aaa bbb').length
+  for (var i = 0; i < len; i += 1) {
+    document.getElementsByClassName('aaa bbb')[i].innerHTML = content
   }
 }
