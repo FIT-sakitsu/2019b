@@ -1,3 +1,5 @@
+// 適宜書き換えてあります！
+
 /** 描画準備 */
 var canvas = document.getElementById('canvas')
 var ctx = canvas.getContext('2d')
