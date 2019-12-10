@@ -1,0 +1,22 @@
+.tab1 {
+  background-color: orange;
+}
+.tab2 {
+  background-color: green;
+}
+.tab3 {
+  background-color: blue;
+}
+.tabs {
+  border-radius: 5px;
+}
+#tab2 {
+  display: none;
+}
+#tab3 {
+  display: none;
+}
+.tab {
+  width: 400px;
+  height: 300px;
+}
