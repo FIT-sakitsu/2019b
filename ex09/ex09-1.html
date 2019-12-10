@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>時間割</title>
+    <link rel="stylesheet" type="text/css" href="ex09-1.css" />
+    <script src="ex09-1.js"></script>
+  </head>
+  <body>
+    <table>
+      <h1>時間割</h1>
+      <thead>
+        <tr>
+          <th></th>
+          <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>-</td>
+          <td class="important">情報基礎2</td>
+          <td>-</td>
+          <td>プロジェクト英語C(Project)</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>-</td>
+          <td class="important">情報基礎2</td>
+          <td>対人コミュニケーション実践</td>
+          <td>-</td>
+          <td>プロジェクト英語C（Academic Writing）</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>-</td>
+          <td>e-Sports論</td>
+          <td>-</td>
+          <td>インターネット</td>
+          <td>アナログ・デジタル電子回路基礎</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>-</td>
+          <td>データ社会とビジネスモデル(寄附講座)</td>
+          <td>-</td>
+          <td>-</td>
+          <td>アナログ・デジタル電子回路基礎</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>-</td>
+          <td>アカデミックライティング実践</td>
+          <td>音楽II</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="text" id="weekday" placeholder="何曜日？" /><input
+      type="number"
+      id="period"
+      placeholder="何時間目？"
+    /><button onclick="execute()" type="button" name="button">検索</button>
+  </body>
+</html>
