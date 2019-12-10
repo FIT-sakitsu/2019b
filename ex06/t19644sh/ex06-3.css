@@ -1,0 +1,29 @@
+.tabs a {
+  width: 100px;
+  display: block;
+  float: left;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: white;
+}
+
+.tab {
+  width: 500px;
+  height: 100px;
+  clear: left;
+}
+
+.tab1 {
+  background-color: orange;
+  display: block;
+}
+
+.tab2 {
+  background-color: green;
+  display: none;
+}
+
+.tab3 {
+  background-color: blue;
+  display: none;
+}

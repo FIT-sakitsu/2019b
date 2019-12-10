@@ -1,0 +1,32 @@
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr *:nth-child(1){
+  background: #FFFFCC;
+}
+
+table tr *:nth-child(2){
+  background: #CCFFCC;
+}
+
+table tr *:nth-child(3){
+  background: #CCFFFF;
+}
+
+table tr *:nth-child(4){
+  background: #FFEEFF;
+}
+table tr *:nth-child(5){
+  background: #FFDBC9;
+}
+table tr *:nth-child(6){
+  background: #EAD9FF;
+}
+
+table th,table td{
+  border:solid 1px black;
+  text-align: center;
+  padding: 10px 0;
+}
