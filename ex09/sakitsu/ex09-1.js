@@ -12,7 +12,7 @@ function classTitle(week, period) {
         case '2':
           return '情報基礎2'
       }
-    default:
-      return '履修している科目はありません'
+      break
   }
+  return '履修している科目はありません'
 }
