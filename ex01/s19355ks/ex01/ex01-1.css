@@ -1,0 +1,29 @@
+h1 {/* １９秋時間割 */
+border-bottom: 2px solid #CC6633;
+font-family: serif;
+
+}
+
+
+title{
+  font-weight: bold;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-color:#996666;
+  text-align: center;
+  font-family: serif;
+}
+
+th {
+  font-weight: bold;
+  border: 3px solid #996666;
+  background-color: #FFFFCC
+  font-family: serif;
+}
+
+ td {
+border: 2px solid #996666;
+ }

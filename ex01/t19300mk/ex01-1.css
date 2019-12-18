@@ -1,0 +1,12 @@
+h1 {
+  color: red;
+}
+th {
+  color: blue;
+}
+table {
+  border: 1px;
+  width: 500px;
+  padding: 5px;
+  border-color: #333333;
+}

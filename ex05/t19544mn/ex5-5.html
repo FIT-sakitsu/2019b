@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>練習問題5-5</title>
+    <script type="text/javascript" src="ex5-5.js"></script>
+  </head>
+  <body>
+    <p class="aaa">要素1</p>
+    <p class="aaa bbb">要素2</p>
+    <p class="ccc aaa bbb">要素3</p>
+    <p class="aaa ccc bbb">要素4</p>
+    <p class="aaa bbb">要素5</p>
+
+    <input type="button" value="cccの内容を変更" onclick="changeC()" /><br />
+    <input
+      type="button"
+      value="aaaとbbbの内容を変更"
+      onclick="changeAB()"
+    /><br />
+    <input type="button" value="内容を元に戻す" onclick="reset()" /><br />
+    <input type="text" value="テキストを入力してください" id="tx" /><br />
+  </body>
+</html>
