@@ -5,27 +5,34 @@ var route = []
 var polyline
 var markers = []
 
-// ルート情報を出力
+// ルートを出力
 function exportRoute() {
   // 配列をJSONフォーマットに変換して出力
   alert('ルートを保存する為には出力された文字列を保存して下さい')
   alert(JSON.stringify(route))
 }
 
-// ルート情報を読みこみ
+// ルートを読みこみ
 function importRoute() {
+  // ユーザーに入力をうながす
   var input = prompt('エクスポートした文字列を入力')
+
   // ユーザーが入力したJSONを配列をに展開してrouteに再展開
   route = JSON.parse(input)
 
-  tempRoute = []
-  drawRouteWithAnimation()
+  // ルートを再現
+  playRoute()
 }
 
-// ルート情報をクリア
+// ルートをクリア
 function clearRoute() {
   route = []
   drawRoute(route)
+}
+
+// ルートをアニメーション再生
+function playRoute() {
+  drawRouteWithAnimation()
 }
 
 // 地図クリックが行われたらルートに座標を追加して再描画
@@ -34,6 +41,7 @@ function clickCallback(event) {
   drawRoute(route)
 }
 
+// 指定されたルートを描画
 function drawRoute(r) {
   // polylineを再描画
   if (polyline != null) {
@@ -55,12 +63,16 @@ function drawRoute(r) {
   }
 }
 
+// ルートをアニメーション形式で描画
 function drawRouteWithAnimation() {
   // 全体を描画しきれていない限り描画を続ける
   if (tempRoute.length < route.length) {
     tempRoute = route.slice(0, tempRoute.length + 1)
     drawRoute(tempRoute)
     setTimeout(drawRouteWithAnimation, 500)
+  } else {
+    // 描画を完了したらtempRouteを空にしておく
+    tempRoute = []
   }
 }
 
