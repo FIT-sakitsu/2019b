@@ -2,6 +2,8 @@ function schedule(day, period) {
   if (day == 'tue') {
     if (period == '1' || period == '2') {
       return '情報基礎２'
+    } else {
+      return '履修している科目はありません'
     }
   } else if (day == 'wed') {
     if (period == '1') {
