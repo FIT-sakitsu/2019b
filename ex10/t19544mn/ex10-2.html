@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>練習問題10-2</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="ex10-2.js"></script>
+  </head>
+  <body>
+    <p class="aaa">要素1</p>
+    <p class="aaa bbb">要素2</p>
+    <p class="ccc aaa bbb">要素3</p>
+    <p class="aaa ccc bbb">要素4</p>
+    <p class="aaa bbb">要素5</p>
+
+    <input type="button" value="cccの色を変更" onclick="changeC();" id="c" />
+    <input
+      type="button"
+      value="aaa&bbbの色を変更"
+      onclick="changeAB();"
+      id="ab"
+    />
+    <input type="text" value="red" id="cl" />
+  </body>
+</html>
