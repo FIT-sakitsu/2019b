@@ -1,0 +1,43 @@
+.tabs a {
+  width: 100px;
+  display: block;
+  float: left;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: white;
+}
+
+.tab {
+  width: 500px;
+  height: 100px;
+  clear: left;
+}
+
+.tab1 {
+  background: linear-gradient(to right, #ff9900, #ff9999);
+}
+
+.tab2 {
+  background: linear-gradient(to right, #00cc33, #00cccc);
+  display: none;
+}
+
+.tab3 {
+  background: linear-gradient(to right, #0066ff, #9966ff);
+  display: none;
+}
+.word {
+  animation: key1 0.3s ease infinite alternate;
+  vertical-align: middle;
+  display: table-cell;
+  height: 100px;
+}
+
+@keyframes key1 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
