@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="ex05-5.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <p class="aaa">要素1</p>
+    <p class="aaa bbb">要素2</p>
+    <p class="ccc aaa bbb">要素3</p>
+    <p class="aaa ccc bbb">要素4</p>
+    <p class="aaa bbb">要素5</p>
+
+    <button onclick="reset()" type="button" name="button">
+      内容を元にもどす
+    </button>
+    <button onclick="changeccc()" type="button" name="button">
+      cccの内容を変更
+    </button>
+    <button onclick="changeaaabbb()" type="button" name="button">
+      aaa&bbbの内容を変更
+    </button>
+    <input type="text" value="テキストを入力してください。" id="words" />
+  </body>
+</html>

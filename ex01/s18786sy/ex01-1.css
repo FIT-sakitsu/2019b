@@ -1,0 +1,6 @@
+table, th, tr{
+  border-collapse: collapse;
+  border: 1px #808080 solid;
+}
+
+#color {color: red;}
