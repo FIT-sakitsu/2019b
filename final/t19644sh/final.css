@@ -1,0 +1,23 @@
+.col-3 {
+  width: 33.333%;
+  float: left;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 200px;
+  background-color: green;
+}
+.center {
+  text-align: center;
+}
+.col-9 {
+  text-align: center;
+  width: 75%;
+  float: left;
+  overflow: hidden;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+.middle {
+  text-align: center;
+  background-color: green;
+}
