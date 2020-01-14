@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>第二の部屋</title>
-    <script></script>
+    <script type="text/jscript" src="./final.js"></script>
   </head>
   <body>
     <h3>第二の部屋</h3>
@@ -13,8 +13,12 @@
     <p>
       運よくポケットにライト付きのスマートフォンが入っているぞ。<br>
     </p>
-    <input type="button" value="左" onclick="dummy();">
-    <input type="button" value="中央" onclick="correct();">
-    <input type="button" value="右" onclick="dummy();">
+    <p>
+      <canvas id="canvas" width="200" height="200"></canvas>
+      <script src="./canvas.js"></script>
+    </p>
+    <input type="button" value="左を探す" onclick="left();">
+    <input type="button" value="中央を探す" onclick="center();">
+    <input type="button" value="右を探す" onclick="right();">
   </body>
 </html>
