@@ -5,21 +5,30 @@
     <title>Reversi</title>
   </head>
   <body>
-    <canvas id="canvas" width="500" height="500"></canvas>
-    <br />黒<input
-      type="text"
-      name="blackCount"
-      value="2"
-      id="blackCountHtml"
-    />
-    <br />白<input
-      type="text"
-      name="whiteCount"
-      value="2"
-      id="whiteCountHtml"
-    />
-    <div id="turn"></div>
-    <input type="button" />
-    <script src="finalAlpha.js" charset="utf-8"></script>
+    <div class="masterBackground">
+      <nav id="menu">
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#">Ranking</a></li>
+          <li><a href="#">Rules</a></li>
+        </ul>
+      </nav>
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <br />黒<input
+        type="text"
+        name="blackCount"
+        value="2"
+        id="blackCountHtml"
+      />
+      <br />白<input
+        type="text"
+        name="whiteCount"
+        value="2"
+        id="whiteCountHtml"
+      />
+      <div id="turn"></div>
+      <input type="button" />
+      <script src="finalAlpha.js" charset="utf-8"></script>
+    </div>
   </body>
 </html>
