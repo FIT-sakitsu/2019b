@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>final</title>
+    <link rel="stylesheet" type="text/css" href="final1.css" />
+  </head>
+  <body>
+    <h1>緑藻飼育</h1>
+    <br />
+    <canvas id="canvas" width="500" height="500">ーー</canvas><br />
+    <input
+      class="btn1"
+      type="button"
+      name="button"
+      value="栄養を与える"
+      onclick="feed();"
+    />
+    <input
+      class="btn2"
+      type="button"
+      name="button"
+      value="初めから育てる"
+      onclick="reload();"
+    />
+    <input
+      class="btn2"
+      type="button"
+      name="button"
+      value="初めから育てる"
+      onclick="speed();"
+    /><br />
+
+    <input type="text" id="lighttext" value="" />
+    ＝照度lux(500以上で増殖) <br />
+    <input type="text" id="number" value="" />
+    ＝細胞数
+    <script src="final1.js" charset="utf-8"></script>
+  </body>
+</html>
