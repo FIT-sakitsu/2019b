@@ -43,7 +43,7 @@ var Reversi = function() {
           ctx.fillRect(x, y, cellWidth, cellWidth)
         }*/
         //オセロ本体
-        var idx = twoDToOneD(j,i);
+        var idx = twoDToOneD(j, i)
         var stoneColor = board[idx]
         if (stoneColor !== 2) {
           ctx.beginPath()
@@ -61,94 +61,83 @@ var Reversi = function() {
         }
       }
     }
-  }
 
-  var init = function() {
-    //ゲームが終わった時・ゲームを最初に描画する時に最初の盤面を描画するfunction
-    for (var i = 0; i < column * row; i++) {
-      /*
+    var init = function() {
+      //ゲームが終わった時・ゲームを最初に描画する時に最初の盤面を描画するfunction
+      for (var i = 0; i < column * row; i++) {
+        /*
       0 is black
       1 is white
       2 is empty
       */
-      board[i] = 2 //2 is empty
+        board[i] = 2 //2 is empty
+      }
+      //fill the center 4
+      board[27] = 0
+      board[28] = 1
+      board[35] = 1
+      board[36] = 0
     }
-    //fill the center 4
-    board[27] = 0
-    board[28] = 1
-    board[35] = 1
-    board[36] = 0
-  }
-  init()
-  render()
+    init()
+    render()
 
-  this.init = init
-  this.render = render
+    this.init = init
+    this.render = render
 
-  var twoDToOneD = function(x,y){
-    return y * row + x;
-  };
-  var oneDToTwoD = function(idx){
-    return [idx%row,Math.floor(idx/row)];
-  }
+    color = 0
+    antiColor = 1
 
-  var coordsToIdx = function(x, y) {
-    //枠内の座標でクリックしたら枠左上の点を選んたことにする
-    var j = Math.floor(x / cellWidth)
-    var i = Math.floor(y / cellWidth)
-    return twoDToOneD(j,i)//
-  }
+    var twoDToOneD = function(x, y) {
+      //座標（x,y）→ twoDToOneDマス目に変換
+      return y * row + x
+    }
+    var oneDToTwoD = function(idx) {
+      //idxマス目 → 座標（oneDToTwoD）に変換
+      return [idx % row, Math.floor(idx / row)]
+    }
 
-  var maskX = [
-    -1,
-    0,
-    1,
-    -1,
-    1,
-    -1,
-    0,
-    1
-  ];
-  var maskY = [
-    -1,
-    -1,
-    -1,
-    0,
-    0,
-    1,
-    1,
-    1,
-  ];
-
-  var search = function functionName(idx) {
-    for(var i = 0; i < maskX.length; i++){
-      var centerxy = twoDToOneD(maskX[i],maskY[i]);
-
-      oneDToTwoD();
-      if(maskX[i] < 0 || maskX[i] >= row)    return false;//左端と右端が
-      if(maskY[i] < 0 || maskY[i] >= column) return false;
-      var idx2 = twoDToOneD(maskX[i],maskY[i]);
-      if(board[idx2] === this.color){
-        continue;//skip same color
-      }else if(board[idx2] === 2){
-        continue;//skip empty
-      }else{
-        //different color, begin the search.
-
+    var xyInRange = function(x, y) {
+      //ルーチン関数
+      if (x < 0 || x >= row) {
+        return false
+      } //左端と右端で次配列に行かないように処理停止
+      if (y < 0 || y >= column) {
+        return false
+      } //上端と下端で次配列に行かないように処理停止
+      if (maskX[i] < 0 || maskX[i] >= row) {
+        return false
+      }
+      if (maskY[i] < 0 || maskY[i] >= column) {
+        return false
+      } else {
+        return true
+      }
+      var coordsToIdx = function(x, y) {
+        //枠内の座標でクリックしたら枠左上の点を選んたことにする
+        var j = Math.floor(x / cellWidth)
+        var i = Math.floor(y / cellWidth)
+        return twoDToOneD(j, i) //
       }
     }
+
+    var maskX = [-1, 0, 1, -1, 1, -1, 0, 1]
+    var maskY = [-1, -1, -1, 0, 0, 1, 1, 1]
   }
 
-  var onclick = function(e) {
+  var canvasOnclick = function(e) {
     //クリックすることで座標の情報を獲得
     var x = e.offsetX
     var y = e.offsetY
     var idx = coordsToIdx(x, y)
     if (board[idx] === 2) {
-      return false
+      var flipped = findFlipped(idx)
+      if (flipped.length === 0) {
+        alert('その場所には置けません！')
+        return false
+      }
     } else {
-      for(var i = 0; i < mask.length; i++){
-        mask[]
+      for (var i = 0; i < mask.length; i++) {
+        // mask[];
       }
     }
   }

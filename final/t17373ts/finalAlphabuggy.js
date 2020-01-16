@@ -100,14 +100,19 @@ var Reversi = function() {
     board[28] = 1
     board[35] = 1
     board[36] = 0
-
-    turn.innerHTML = '黒のターン！黒側が操作してください。'
-
-    document.getElementsByName('blackCount')[0].value = 2
-    document.getElementsByName('whiteCount')[0].value = 2
-    render()
+    /*tet section*/
+    for (var i = 0; i < 8; i++) {
+      board[i] = 1
+    }
+    for (var i = 0; i < 8; i++) {
+      board[i + 8] = 2
+    }
+    for (var i = 0; i < 8; i++) {
+      board[i + 16] = 0
+    }
   }
   init()
+  render()
 
   this.init = init
   this.render = render
@@ -137,8 +142,6 @@ var Reversi = function() {
               } else if (board[idx3] === color) {
                 //found match, add pairs
                 flipped.push(matches)
-                break
-              } else {
                 break
               }
             } else {

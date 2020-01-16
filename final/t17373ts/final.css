@@ -1,0 +1,37 @@
+canvas {
+  float: left;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+#content-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 700px;
+  border-top-style: solid;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-right-width: 3px;
+  border-right-style: solid;
+}
+
+#marginBox {
+}
+#canvas-wrapper {
+  float: left;
+  width: 500px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#content-menu {
+  float: left;
+  width: 200px;
+  padding: 10px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
