@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ゲームオーバ</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .slide {
+        width: 640px;
+        height: 480px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+      }
+      .slide ul {
+        width: 5000px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0;
+      }
+      .slide ul li {
+        display: inline-block;
+      }
+      #back {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        cursor: pointer;
+        z-index: 1;
+      }
+      #next {
+        position: absolute;
+        top: 250px;
+        right: 0;
+        cursor: pointer;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="toptitle">G A M E O V E R</h1>
+    <div class="slide">
+      <img id="back" src="back.png" alt="" width="100" />
+      <ul>
+        <li>
+          <img src="gameover.png" alt="" width="640" height="480" />
+        </li>
+        <li>
+          <img src="akira.png" alt="" width="640" height="480" />
+        </li>
+        <li>
+          <img src="pien.png" alt="" width="640" height="480" />
+        </li>
+      </ul>
+      <img id="next" src="next.png" alt="" width="100" />
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var imgs
+      var img_count
+      var img_position = 1
+
+      imgs = $('.slide ul')
+      img_count = imgs.children().length
+
+      $('#back').click(function() {
+        back()
+      })
+      $('#next').click(function() {
+        next()
+      })
+
+      function back() {
+        if (1 < img_position) {
+          imgs.animate({
+            left: '+=640px',
+          })
+          img_position--
+        }
+      }
+      function next() {
+        if (img_count > img_position) {
+          imgs.animate({
+            left: '-=640px',
+          })
+          img_position++
+        }
+      }
+    })
+  </script>
+</html>
