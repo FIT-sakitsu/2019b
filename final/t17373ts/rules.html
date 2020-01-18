@@ -2,7 +2,7 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Reversi</title>
+    <title>Rules</title>
     <!-- drawer.css -->
     <link
       rel="stylesheet"
@@ -14,7 +14,6 @@
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <script src="drawerMenu.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="final.css" />
   </head>
   <body class="drawer drawer--left">
     <div class="masterBackground">
@@ -32,30 +31,6 @@
           </ul>
         </nav>
       </header>
-
-      <div id="content-wrapper">
-        <div id="canvas-wrapper">
-          <h1>Reversi</h1>
-          <canvas id="canvas" width="500" height="500"></canvas>
-        </div>
-        <div id="content-menu">
-          <br />黒<input
-            type="text"
-            name="blackCount"
-            value="2"
-            id="blackCountHtml"
-          />
-          <br />白<input
-            type="text"
-            name="whiteCount"
-            value="2"
-            id="whiteCountHtml"
-          />
-          <div id="turn"></div>
-          <input type="button" onclick="reversi.init()" value="リセット" />
-        </div>
-      </div>
-      <script src="finalAlpha.js" charset="utf-8"></script>
     </div>
   </body>
 </html>
