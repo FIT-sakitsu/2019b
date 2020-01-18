@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>第四の部屋</title>
+    <script type="text/javascript" src="./final.js"></script>
+    <script type="text/javascript" src="./room4time.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  </head>
+  <body>
+    <h3>第四の部屋</h3>
+    <p>
+      四つ目の部屋か…。おや、看板が立っているぞ。
+    </p>
+    <p id="signboard">
+      部屋に入ってから１０秒以内に問題に解答せよ。<br>
+      【問題】<br>
+      <span id="name"></span>は今、ノートと鉛筆を買おうと文房具屋に入った。<br>
+      ノートと鉛筆は合わせて110円。ノートは鉛筆より100円高い。<br>
+      さて、鉛筆の値段は？<br>
+      数字（半角）を入力　<input type="text" value="" id="price">円<br>
+      <input type="button" value="解答" onclick="ans4();">
+    </p>
+    <p>えっ、１０秒！？</p>
+  </body>
+</html>

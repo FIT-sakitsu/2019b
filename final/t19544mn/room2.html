@@ -2,6 +2,10 @@
   <head>
     <meta charset="utf-8">
     <title>第二の部屋</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <script type="text/jscript" src="./final.js"></script>
   </head>
   <body>
@@ -17,8 +21,10 @@
       <canvas id="canvas" width="200" height="200"></canvas>
       <script src="./canvas.js"></script>
     </p>
-    <input type="button" value="左を探す" onclick="left();">
-    <input type="button" value="中央を探す" onclick="center();">
-    <input type="button" value="右を探す" onclick="right();">
+    <div class="btn-group" role="group" aria-label="Basic example">
+     <input type="button" value="左を探す" onclick="left();" class="btn btn-outline-light">
+     <input type="button" value="中央を探す" onclick="center();" class="btn btn-outline-light">
+     <input type="button" value="右を探す" onclick="right();" class="btn btn-outline-light">
+    </div>
   </body>
 </html>
