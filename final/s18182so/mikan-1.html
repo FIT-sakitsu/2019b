@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>みかんの全国収穫量</title>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      td {
+        width: 80px;
+        padding: 5px;
+        border: 3px solid #00001c;
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+
+  <body background="joukiso.jpg">
+    <h1>🍊みかんの全国収穫量🍊</h1>
+    <div id="space"></div>
+    <p>
+      <button type="button" onclick="ascendingSort()">収穫量昇順</button>
+      <button type="button" onclick="descendingSort()">収穫量降順</button>
+    </p>
+
+    <h2>和歌山 VS 愛媛 ！みかん対決！</h2>
+    <ul>
+      <li id="pref1" class="wakayama">みかんの生産量日本一</li>
+      <li id="pref2" class="ehime">ポンジュース</li>
+      <li id="pref3" class="ehime">蛇口からオレンジジュース</li>
+      <li id="pref4" class="wakayama">有田みかん</li>
+      <li id="pref5" class="ehime">柑橘類の生産量日本一</li>
+      <li id="pref6" class="wakayama">ミカピーといえば？(ご当地キャラ)</li>
+    </ul>
+    <button onclick="reset()">リセット</button><br />
+    <button onclick="wakayama()">和歌山</button>
+    <button onclick="ehime()">愛媛</button><br />
+    <button onclick="pref1()">みかんの生産量日本一</button>
+    <button onclick="pref2()">ポンジュース</button>
+    <button onclick="pref3()">蛇口からオレンジジュース</button>
+    <button onclick="pref4()">有田みかん</button>
+    <button onclick="pref5()">柑橘類の生産量日本一</button>
+    <button onclick="pref6()">ミカピー(ご当地キャラ)</button>
+
+    <h3>収穫量１位の和歌山県の場所</h3>
+    <div class="ggmap">
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+      ></script>
+      <!-- leaflet用css -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""
+      />
+      <!-- leaflet用javascript -->
+      <script
+        src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""
+      ></script>
+    </div>
+
+    <div id="map" style="width: 600px; height: 400px;"></div>
+
+    <script src="mikan2.js" charset="utf-8"></script>
+  </body>
+</html>
