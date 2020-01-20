@@ -10,20 +10,6 @@ function light_print(event) {
 }
 window.addEventListener('devicelight', light_print)
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
-    center: { lat: 34.3953588, lng: 132.4535418 },
-  })
-  map.addListener('click', function(e) {
-    getClickLatLng(e.latLng, map)
-  })
-}
-
-function getClickLatLng(lat_lng, map) {
-  map.panTo(lat_lng)
-}
-
 function recommend() {
   var day = prompt('何曜日? ')
   if (day == '月曜日') {
@@ -64,6 +50,9 @@ function clickCallback(event) {
 }
 
 $(function() {
+  $(document).ready(function showMessage() {
+    alert('バナナ好きのアナタ！！バナナの楽園へようこそ！！')
+  })
   map = L.map('map')
   map.setView([34.498339, 136.777742], 16)
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -90,27 +79,21 @@ function uranai() {
   document.getElementById('what').innerHTML = unsei[i]
 }
 
-function quiz() {
-  var x = document.getElementsByName('ryosuke')
-  for (var i = 0; i < x.length; i = i + 1) {
-    if (x[i].checked) {
-      if (
-        i == 0 ||
-        i == 3 ||
-        i == 6 ||
-        i == 10 ||
-        i == 14 ||
-        i == 16 ||
-        i == 20
-      ) {
-        alert('正解です！')
-      } else {
-        alert('不正解です！')
-      }
-    }
+function func(json) {
+  var ele = document.getElementById('result')
+
+  var i
+  for (i = 0; i < json.query.allpages.length; i++) {
+    ele.innerHTML += i + ': ' + json.query.allpages[i].title + '<br />'
   }
 }
 
-$(document).ready(function showMessage() {
-  alert('バナナ好きのアナタ！！バナナの楽園へようこそ！！')
-})
+function loadFromWikipedia() {
+  var e = document.getElementById('result')
+  var o = document.createElement('script')
+  o.setAttribute(
+    'src',
+    'https://ja.wikipedia.org/w/api.php?action=query&list=allpages&apfrom=バナナ&aplimit=50&format=json&callback=func'
+  )
+  e.appendChild(o)
+}

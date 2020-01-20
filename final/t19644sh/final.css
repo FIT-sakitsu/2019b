@@ -6,9 +6,7 @@
   height: 200px;
   background-color: green;
 }
-.center {
-  text-align: center;
-}
+
 .col-9 {
   text-align: center;
   width: 75%;
@@ -17,7 +15,9 @@
   margin-left: 12.5%;
   margin-right: 12.5%;
 }
-.middle {
-  text-align: center;
-  background-color: green;
+
+.all {
+  width: 800px; /* 幅指定 */
+  height: 90px; /* 高さ指定 */
+  margin: 0 auto; /* 中央寄せ */
 }

@@ -8,11 +8,7 @@
       type="text/javascript"
       src="https://ipl.sfc.keio.ac.jp/text/info2-2018-9/lib/jquery-3.3.1.min.js"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -29,175 +25,199 @@
   </head>
 
   <body bgcolor="gold">
-    <!-- トップ -->
-    <div class="title" id="m0">
-      <h1>🍌バナナ🍌</h1>
-    </div>
+    <div class="all">
+      <!-- トップ -->
+      <div class="title" id="m0">
+        <h1>🍌バナナ🍌</h1>
+      </div>
 
-    <!-- メニュー -->
-    <div class="menu">
-      <h5 class="men">目次</h5>
-      <ul>
-        <li><a href="#m0">トップ</a></li>
-        <li><a href="#m1">はじめに</a></li>
-        <li><a href="#m2">バナナ基本情報</a></li>
-        <li><a href="#m3">『特集』ともいきバナナ</a></li>
-        <li><a href="#m4">ランキング</a></li>
-        <li><a href="#m5">🍌曜日別おすすめバナナ🍌</a></li>
-        <li><a href="#m6">🍌バナナ占い🍌</a></li>
-        <li><a href="#m7">参考文献</a></li>
-        <li><a href="#m8">チェック問題へ</a></li>
-      </ul>
-    </div>
+      <!-- メニュー -->
+      <div class="menu">
+        <h5 class="men">目次</h5>
+        <ul>
+          <li><a href="#m0">トップ</a></li>
+          <li><a href="#m1">はじめに</a></li>
+          <li><a href="#m2">バナナ基本情報</a></li>
+          <li><a href="#m3">『特集』ともいきバナナ</a></li>
+          <li><a href="#m4">ランキング</a></li>
+          <li><a href="#m5">🍌曜日別おすすめバナナ🍌</a></li>
+          <li><a href="#m6">🍌バナナ占い🍌</a></li>
+          <li><a href="#m7">参考文献</a></li>
+          <li><a href="#m8">チェック問題へ</a></li>
+        </ul>
+      </div>
 
-    <div class="info article" id="m1">
-      <h2>＜はじめに＞</h2>
-      <p>
-        バナナという果物を知っているだろうか。バカにするんじゃないと思った人も数多くいるだろう。では質問を少し変えよう。バナナという果物を"どれだけ"知っているだろうか。きっと答えは、『バナナ？あー知ってるよ。黄色くて甘い果物でしょ？』　このような答えが限界なのではないだろうか。情報基礎2の最終課題という場をお借りして、知られているようで知られていないバナナの魅力に迫っていきたい。
-      </p>
-    </div>
+      <div class="info article" id="m1">
+        <h2>＜はじめに＞</h2>
+        <p>
+          バナナという果物を知っているだろうか。バカにするんじゃないと思った人も数多くいるだろう。では質問を少し変えよう。バナナという果物を"どれだけ"知っているだろうか。きっと答えは、『バナナ？あー知ってるよ。黄色くて甘い果物でしょ？』　このような答えが限界なのではないだろうか。情報基礎2の最終課題という場をお借りして、知られているようで知られていないバナナの魅力に迫っていきたい。
+        </p>
+      </div>
 
-    <div class="info article" id="m2">
-      <h2>＜バナナ基本情報＞</h2>
-      <span class="image left"><img src="1.jpg" width="480" id="dome"/></span>
+      <div class="info article" id="m2">
+        <h2>＜バナナ基本情報＞</h2>
+        <span class="image left"><img src="1.jpg" width="480" id="dome"/></span>
 
-      <p>
-        バナナ（甘蕉、実芭蕉、英: Banana[1]、学名 Musa
-        spp.）は、バショウ科バショウ属のうち、果実を食用とする品種群の総称である。また、その果実のこと。
-      </p>
-      <p>
-        いくつかの原種から育種された多年性植物。種によっては熟すまでは毒を持つものもある。日本では古くは芭蕉と呼ばれた[注
-        1]が、実を食するものは実芭蕉（みばしょう）とも呼ばれる。
-      </p>
-      <p>
-        食用果実として非常に重要で、2009年の全世界での年間生産量は生食用バナナが9581万トン、料理用バナナが3581万トンで、総計では1億3262万トンにのぼる。アジアやラテンアメリカの熱帯域で大規模に栽培されているほか、東アフリカや中央アフリカでは主食として小規模ながら広く栽培が行われている。
-      </p>
-      <p>
-        また、花を料理に使う地域もあり、葉は皿代わりにしたり、包んで蒸すための材料にしたりするほか、屋根の材料などとしても利用される。
-      </p>
-    </div>
+        <p>
+          バナナ（甘蕉、実芭蕉、英: Banana、学名 Musa
+          spp.）は、バショウ科バショウ属のうち、果実を食用とする品種群の総称である。また、その果実のこと。
+        </p>
+        <p>
+          いくつかの原種から育種された多年性植物。種によっては熟すまでは毒を持つものもある。日本では古くは芭蕉と呼ばれたが、実を食するものは実芭蕉（みばしょう）とも呼ばれる。
+        </p>
+        <p>
+          食用果実として非常に重要で、2009年の全世界での年間生産量は生食用バナナが9581万トン、料理用バナナが3581万トンで、総計では1億3262万トンにのぼる。アジアやラテンアメリカの熱帯域で大規模に栽培されているほか、東アフリカや中央アフリカでは主食として小規模ながら広く栽培が行われている。
+        </p>
+        <p>
+          また、花を料理に使う地域もあり、葉は皿代わりにしたり、包んで蒸すための材料にしたりするほか、屋根の材料などとしても利用される。
+        </p>
+      </div>
 
-    <!-- 場所 -->
-    <div class="location article" id="m3">
-      <h2>＜『特集』ともいきバナナ＞</h2>
-      <h1>ともいきバナナ</h1>
-      <p>皮ごと食べられる。フルーツを超えた、贅沢濃厚スイーツ。</p>
-      <p>純国産の最高級バナナをご存知だろうか。その名は『ともいきバナナ』。</p>
-      <p>
-        凍結解凍覚醒法という特殊な農法を用いることで、バナナは擬似的に氷河期を体験する。この手順によってバナナは甘く、早く育つ。
-      </p>
-      <p>
-        完全無農薬だから、皮ごと食べられる。バナナの常識を破壊する『ともいきバナナ』に注目だ。
-      </p>
-      <p><a href="https://banana.theshop.jp/">ともいきバナナ公式HP</a></p>
-      <p>↓ともいきバナナは、ともいきの国 伊勢忍者キングダムで販売中</p>
-      <div id="map" style="width:600px;height:600px"></div>
-      <p>
-        <a
-          href="https://www.google.com/maps/dir/%E6%85%B6%E6%87%89%E7%BE%A9%E5%A1%BE%E5%A4%A7%E5%AD%A6%E6%B9%98%E5%8D%97%E8%97%A4%E6%B2%A2%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E3%80%81%E3%80%92252-0882+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%97%A4%E6%B2%A2%E5%B8%82%E9%81%A0%E8%97%A4%EF%BC%95%EF%BC%93%EF%BC%92%EF%BC%92/%E3%80%92519-0603+%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82%E4%BA%8C%E8%A6%8B%E7%94%BA%E4%B8%89%E6%B4%A5%EF%BC%91%EF%BC%92%EF%BC%90%EF%BC%91%E2%88%92%EF%BC%91+%E3%81%A8%E3%82%82%E3%81%84%E3%81%8D%E3%81%AE%E5%9B%BD+%E4%BC%8A%E5%8B%A2%E5%BF%8D%E8%80%85%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0/@34.961673,135.786967,7z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x60185394acdc07c3:0xc281fed97a64744a!2m2!1d139.4276038!2d35.3881668!1m5!1m1!1s0x6004577b1fdfa313:0x9e6fd332761e2049!2m2!1d136.7777235!2d34.4981735"
-          >アクセス</a
-        >
-      </p>
-      <p>〒519-0603 三重県伊勢市二見町三津１２０１−１</p>
-      <p>電話番号 0596-43-2300</p>
-    </div>
+      <!-- 場所 -->
+      <div class="location article" id="m3">
+        <h2>＜『特集』ともいきバナナ＞</h2>
+        <h1>ともいきバナナ</h1>
+        <p>皮ごと食べられる。フルーツを超えた、贅沢濃厚スイーツ。</p>
+        <p>
+          純国産の最高級バナナをご存知だろうか。その名は『ともいきバナナ』。
+        </p>
+        <p>
+          凍結解凍覚醒法という特殊な農法を用いることで、バナナは擬似的に氷河期を体験する。この手順によってバナナは甘く、早く育つ。
+        </p>
+        <p>
+          完全無農薬だから、皮ごと食べられる。バナナの常識を破壊する『ともいきバナナ』に注目だ。
+        </p>
+        <p><a href="https://banana.theshop.jp/">ともいきバナナ公式HP</a></p>
+        <p>↓ともいきバナナは、ともいきの国 伊勢忍者キングダムで販売中</p>
+        <div id="map" style="width:600px;height:600px"></div>
+        <p>
+          <a
+            href="https://www.google.com/maps/dir/%E6%85%B6%E6%87%89%E7%BE%A9%E5%A1%BE%E5%A4%A7%E5%AD%A6%E6%B9%98%E5%8D%97%E8%97%A4%E6%B2%A2%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E3%80%81%E3%80%92252-0882+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%97%A4%E6%B2%A2%E5%B8%82%E9%81%A0%E8%97%A4%EF%BC%95%EF%BC%93%EF%BC%92%EF%BC%92/%E3%80%92519-0603+%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82%E4%BA%8C%E8%A6%8B%E7%94%BA%E4%B8%89%E6%B4%A5%EF%BC%91%EF%BC%92%EF%BC%90%EF%BC%91%E2%88%92%EF%BC%91+%E3%81%A8%E3%82%82%E3%81%84%E3%81%8D%E3%81%AE%E5%9B%BD+%E4%BC%8A%E5%8B%A2%E5%BF%8D%E8%80%85%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0/@34.961673,135.786967,7z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x60185394acdc07c3:0xc281fed97a64744a!2m2!1d139.4276038!2d35.3881668!1m5!1m1!1s0x6004577b1fdfa313:0x9e6fd332761e2049!2m2!1d136.7777235!2d34.4981735"
+            >アクセス</a
+          >
+        </p>
+        <p>〒519-0603 三重県伊勢市二見町三津１２０１−１</p>
+        <p>電話番号 0596-43-2300</p>
+      </div>
 
-    <div class="sightseeing article" id="m4">
-      <h2>＜ランキング＞</h2>
+      <div class="sightseeing article" id="m4">
+        <h2>＜ランキング＞</h2>
 
-      <h4>バナナ生産量ランキング(世界総計 1.13億トン)</h4>
+        <h4>バナナ生産量ランキング(世界総計 1.32億トン)</h4>
 
-      <table>
-        <tbody>
-          <tr>
-            <td>1位</td>
-            <td>インド (2912万トン)</td>
-          </tr>
-          <tr>
-            <td>2位</td>
-            <td>中国 (1332万トン)</td>
-          </tr>
-          <tr>
-            <td>3位</td>
-            <td>インドネシア (700万トン)</td>
-          </tr>
-          <tr>
-            <td>4位</td>
-            <td>ブラジル (686万トン)</td>
-          </tr>
-          <tr>
-            <td>5位</td>
-            <td>エクアドル（652万トン）</td>
-          </tr>
-          <tr>
-            <td>6位</td>
-            <td>フィリピン（582万トン）</td>
-          </tr>
-          <tr>
-            <td>・・・・</td>
-            <td>・・・・・・・・・・・・・</td>
-          </tr>
-          <tr>
-            <td>128位</td>
-            <td>日本（32トン）</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <tbody>
+            <tr>
+              <td>1位</td>
+              <td>インド (2912万トン)</td>
+            </tr>
+            <tr>
+              <td>2位</td>
+              <td>中国 (1332万トン)</td>
+            </tr>
+            <tr>
+              <td>3位</td>
+              <td>インドネシア (700万トン)</td>
+            </tr>
+            <tr>
+              <td>4位</td>
+              <td>ブラジル (686万トン)</td>
+            </tr>
+            <tr>
+              <td>5位</td>
+              <td>エクアドル（652万トン）</td>
+            </tr>
+            <tr>
+              <td>6位</td>
+              <td>フィリピン（582万トン）</td>
+            </tr>
+            <tr>
+              <td>・・・・</td>
+              <td>・・・・・・・・・・・・・</td>
+            </tr>
+            <tr>
+              <td>128位</td>
+              <td>日本（32トン）</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h4>日本におけるバナナ輸入量ランキング (110.9万トン)</h4>
+        <h4>日本におけるバナナ輸入量ランキング (110.9万トン)</h4>
 
-      <table>
-        <tbody>
-          <tr>
-            <td>1位</td>
-            <td>フィリピン (103.5万トン/約93%)</td>
-          </tr>
-          <tr>
-            <td>2位</td>
-            <td>エクアドル (4.6万トン/約4%)</td>
-          </tr>
-          <tr>
-            <td>3位</td>
-            <td>台湾 (0.9万トン/約1%)</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <tbody>
+            <tr>
+              <td>1位</td>
+              <td>フィリピン (103.5万トン/約93%)</td>
+            </tr>
+            <tr>
+              <td>2位</td>
+              <td>エクアドル (4.6万トン/約4%)</td>
+            </tr>
+            <tr>
+              <td>3位</td>
+              <td>台湾 (0.9万トン/約1%)</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p>
-        バナナの生産量ランキング(国別)とバナナの日本への輸入量ランキング(国別)を比較してみると、ランキングに大きな違いが見られます。生産量では1位から4位にランクインしている国々が、輸入量ランキングでは姿を消しています。この理由として考えられるのは、生産量ランキング上位の国は人口が多いためにバナナの国内消費量が膨大であること、
-      </p>
-    </div>
+        <p>
+          バナナの生産量ランキング(国別)とバナナの日本への輸入量ランキング(国別)を比較してみると、ランキングに大きな違いが見られます。生産量では1位から4位にランクインしている国々が、輸入量ランキングでは姿を消しています。生産量ランキング上位の国は人口が多いためにバナナの国内消費量が膨大であることが、理由として考えられます。
+        </p>
+      </div>
 
-    <!-- 観光ガイド -->
-    <div class="sightseeing2 article" id="m5">
-      <h2>＜🍌曜日別おすすめバナナ🍌＞</h2>
-      <button onclick="recommend()">曜日検索</button>
-      <script type="text/javascript" src="final.js"></script>
-    </div>
+      <!-- 観光ガイド -->
+      <div class="sightseeing2 article" id="m5">
+        <h2>＜🍌曜日別おすすめバナナ🍌＞</h2>
+        <p>毎日食べたいバナナ。日替わりで違う品種のバナナをおすすめします。</p>
+        <button onclick="recommend()">曜日検索</button>
+      </div>
 
-    <!-- 占い -->
-    <div class="uranai article" id="m6">
-      <h2>＜🍌バナナ占い🍌＞</h2>
-      <p>あなたの運勢をバナナで占う！</p>
-      <script type="text/javascript" src="final.js"></script>
-      <button onclick="uranai();">バナナ占い開始</button><br />
-      <div id="what"></div>
-    </div>
+      <!-- 占い -->
+      <div class="uranai article" id="m6">
+        <h2>＜🍌バナナ占い🍌＞</h2>
+        <p>あなたの運勢をバナナに例えて占う！</p>
 
-    <!-- 参考文献 -->
-    <div class="source article" id="m7">
-      <h2>参考文献</h2>
-      <p>
-        <a href="" target="_blank"></a>
-      </p>
-      <p><a href="" target="_blank">じ</a></p>
-      <p><a href="" target="_blank"></a></p>
-    </div>
+        <button onclick="uranai();">バナナ占い開始</button><br />
+        <div id="what"></div>
+      </div>
 
-    <!--　チェック問題 -->
-    <div class="quiz article" id="m8">
-      <h2>チェック問題</h2>
-      <a href="final2.html"><input value="クイズへ" type="button"/></a>
+      <!-- チェック問題 -->
+      <div class="quiz article" id="m8">
+        <h2>チェック問題</h2>
+        <a href="final2.html"><input value="クイズへ" type="button"/></a><br />
+        <p>あなたのバナナマスター度を調査します</p>
+      </div>
+
+      <h2>おまけ　バナナにまつわる言葉</h2>
+      <button type="button" name="button" onclick="loadFromWikipedia()">
+        クリックしてね
+      </button>
+      <div id="result"></div>
+
+      <!-- 参考文献 -->
+      <div class="source article" id="m7">
+        <h2>参考文献</h2>
+        <p>
+          <a
+            href="https://www.maff.go.jp/j/heya/sodan/1201/a01.html"
+            target="_blank"
+            >農林水産省　消費者相談　バナナの国別の輸入量</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.kudamononavi.com/zukan/banana.html"
+            target="_blank"
+            >果物情報サイト　果物ナビ　バナナ</a
+          >
+        </p>
+        <p>
+          <a href="https://banana.theshop.jp/" target="_blank"
+            >ともいきバナナ公式サイト</a
+          >
+        </p>
+      </div>
     </div>
   </body>
 </html>
