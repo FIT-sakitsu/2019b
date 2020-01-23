@@ -28,6 +28,14 @@
  `jQuery`の`cookie`機能を自分で調べて、ページ遷移を行っても値を保持できるようにしました。これにより、ユーザー登録とライフポイント管理ができるようになりました。また、ライフポイントには配列を用いて管理しました。
  複数ステージを設定し、ゲームストーリーに対して違和感なく、タイマー関数や照度センサーを盛り込みました。
 
+ ## 参考
+ Pixabay GmbH. Pixabay. https://pixabay.com/ja/photos/ゴリラ-霊長類-動物-アフリカ-1031235/ (参照 2020-1-23)
+ 株式会社侍. "【jQuery入門】超簡単!jQuery.Cookieを使った読み書き方法まとめ". Samurai Blog. 2018-5-22 https://www.sejuku.net/blog/54153 (参照 2020-1-23)
+ The jQuery Foundation. "jQuery CDN". jQuery. https://code.jquery.com (参照 2020-1-23)
+ bootstrap team. "Buttons・Bootstrap" Bootstrap. https://getbootstrap.com/docs/4.4/components/buttons/ (参照 2020-1-23)
+ "WEB色見本　原色大辞典 -HTMLカラーコード". WEB色見本　原色大辞典. https://www.colordic.org (参照 2020-1-23)
+ "スタイルシートリファレンス（目的別）". HTMLクイックリファレンス. http://www.htmq.com/style/ (参照 2020-1-23)
+ 
  ## 採点要件
 
  - [x] JavaScript をつかった Web ページを作成する
