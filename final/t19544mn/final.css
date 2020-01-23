@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  background-color: #708090;
+  color: #f0f8ff;
+}
+#letter{
+  border: solid 5px #b0c4de;
+  background-color: #ffffff;
+  color: black;
+  margin: 10px 10px 30px 30px;
+}
+
+#black{
+  background-color: black;
+}
+
+#signboard{
+  border: solid 5px #4d260b;
+  background-color: #4d321f;
+  margin: 10px 10px 30px 30px;
+}
