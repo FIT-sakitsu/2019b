@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>豊福裕美子最終課題</title>
+    <link rel="stylesheet" href="final2.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="processing.js"></script>
+    <script type="text/processing" data-processing-target="processing-canvas">
+
+      int n = 100;
+      int[] x = new int[n];
+      int[] y = new int[n];
+      int[] d = new int[n];
+      int[] vx = new int[n];
+      int[] vy = new int[n];
+      color[] c = new color[n];
+
+      void setup() {
+          size(2000,300);
+          for (int i = 0; i < x.length; i++) {
+              d[i] = (int)random(2, 20);
+              x[i] = (int)random(d[i] / 2, width - d[i] / 2);
+              y[i] = (int)random(d[i] / 2, height - d[i] / 2);
+              while (vx[i] == 0)
+                  vx[i] = (int)random(-5, 5);
+              while (vy[i] == 0)
+                  vy[i] = (int)random(-5, 5);
+              c[i] = color(random(183,255), random(244, 255),255);
+          }
+      }
+
+      void draw() {
+          textSize(10);
+          background(92,222,205);
+          for (int i = 0; i < x.length; i++) {
+              pingpong(i);
+              info(i);
+          }
+      }
+
+      void pingpong(int i) {
+          if (x[i] >= width - d[i] / 2 || x[i] <= d[i] / 2)
+              vx[i] = -vx[i];
+          if (y[i] >= height - d[i] / 2 || y[i] <= d[i] / 2)
+              vy[i] = -vy[i];
+          x[i] += vx[i];
+          y[i] +=vy[i];
+
+          fill(c[i]);
+          stroke(255);
+          ellipse(x[i], y[i], d[i], d[i]);
+      }
+
+      void info(int i) {
+          String s;
+          PFont f;
+          f = createFont("Menlo",random(10,40));
+
+          textFont(f);
+            s = "A";
+
+          fill(255, 100);
+          text(s, x[i] + 20, y[i] + 20);
+      }
+    </script>
+    <canvas id="processing-canvas"></canvas>
+  </head>
+  <body>
+    <p id="word"></p>
+    <input type="text" id="answer" />
+    <div id="timer"></div>
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <button class="scorebutton" onclick="score()" 　>score</button>
+    <button class="scorebutton" onclick="stoptimer()" 　>中断</button>
+    <button class="scorebutton" onclick="restart()" 　>再開</button>
+    <p id="total"></p>
+    <p id="no"></p>
+    <input type="text" id="lighttext" class="light" value="部屋の明るさ" /> lux
+    <p class="light">明るいところでプレイしてね！</p>
+    <p class="light">ゲームに適した明るさ：300~500lux</p>
+  </body>
+  <script type="text/javascript" src="final2.js"></script>
+</html>

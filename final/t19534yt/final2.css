@@ -1,0 +1,46 @@
+*:focus {
+  outline: none;
+}
+
+#word {
+  font-size: 50px;
+  font-weight: bold;
+
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+#answer {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+#timer {
+  margin-top: 6px;
+  margin-left: 50px;
+}
+
+#canvas {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+button.scorebutton {
+  margin-top: 1px;
+  margin-left: 10px;
+  padding: 10px 30px;
+}
+
+#total {
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+#no {
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.light {
+  font-size: 5px;
+}
