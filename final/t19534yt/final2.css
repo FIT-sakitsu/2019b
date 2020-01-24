@@ -44,3 +44,8 @@ button.scorebutton {
 .light {
   font-size: 5px;
 }
+
+.restart {
+  margin-top: 1px;
+  margin-left: 10px;
+}
