@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ジェンを帰らせよー</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="page3.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>予想外のことが起こってしまった！</h1>
+    <img src="sensor.png" width="640" height="480" />
+    <h2>今あなたのlux(照度の単位)は</h2>
+    <input
+      type="number"
+      id="hikari"
+      placeholder="レンズに光を照らしてみよう"
+    />luxです。
+    <h2>あなたの最大のluxはいくらだった？</h2>
+    <input type="text" id="popo" value="" placeholder="でたlux値を入力" />
+    <input type="submit" value="勝てるのかな" onclick="atai()" />
+    <h2>結果はどうでしたか</h2>
+    <button type="button" onclick="location.href='page4.html'">
+      勝ち
+    </button>
+    <button type="button" onclick="location.href='gameover.html'">
+      負け
+    </button>
+  </body>
+</html>

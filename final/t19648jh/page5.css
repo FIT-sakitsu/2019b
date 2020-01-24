@@ -1,0 +1,17 @@
+#wrapper {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+
+#rebutton {
+  background-color: white;
+  color: red;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+#rebutton:hover {
+  background-color: black;
+  color: white;
+}
