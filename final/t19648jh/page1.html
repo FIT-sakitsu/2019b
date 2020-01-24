@@ -8,6 +8,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="page1.js" charset="utf-8"></script>
   </head>
   <body>
     <h1 id="toptitle">ジェンを帰らせよー！</h1>
@@ -15,42 +16,12 @@
       <div id="back_img">
         <img src="main.png" width="640px" />
       </div>
-      <div id="click_on">
-        Click
-      </div>
+      <button id="button">
+        Click ME
+      </button>
     </div>
-    <div class="back_img">
-      <img src="main2.png" width="640" height="480" />
-    </div>
-    <script>
-      $(function() {
-        $('.back_img img').hide()
-        $('.back_img img').css('opacity', '0.3')
-        $('#click_on').click(function() {
-          $('#click_on').animate({ opacity: 0 }, 640)
-          $('.back_img img').show()
-        })
-        $('.back_img img').hover(
-          function() {
-            $(this).css('opacity', '1')
-          },
-          function() {
-            $(this).css('opacity', '0.3')
-          }
-        )
-        $('.back_img img').click(function() {
-          $('.back_img2').remove()
-          var src = $(this).attr('src')
-          $('#back_img img').animate({ opacity: 0 }, 640)
-          setTimeout(function() {
-            $('#back_img')
-              .html("<img class='back_img2' src=" + src + " width='100%' >")
-              .css('opacity', 0)
-              .stop()
-              .animate({ opacity: 1 }, 640)
-          }, 500)
-        })
-      })
-    </script>
+    <button type="button" onclick="location.href='page2.html'">
+      手伝う！
+    </button>
   </body>
 </html>

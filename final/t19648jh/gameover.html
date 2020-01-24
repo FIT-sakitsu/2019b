@@ -33,14 +33,14 @@
       #back {
         position: absolute;
         top: 250px;
-        left: 0;
+        left: 100px;
         cursor: pointer;
         z-index: 1;
       }
       #next {
         position: absolute;
         top: 250px;
-        right: 0;
+        right: 100px;
         cursor: pointer;
         z-index: 1;
       }
@@ -48,8 +48,8 @@
   </head>
   <body>
     <h1 id="toptitle">G A M E O V E R</h1>
+    <img id="back" src="back.png" alt="" width="100" />
     <div class="slide">
-      <img id="back" src="back.png" alt="" width="100" />
       <ul>
         <li>
           <img src="gameover.png" alt="" width="640" height="480" />
@@ -61,8 +61,11 @@
           <img src="pien.png" alt="" width="640" height="480" />
         </li>
       </ul>
-      <img id="next" src="next.png" alt="" width="100" />
     </div>
+    <img id="next" src="next.png" alt="" width="100" />
+    <button type="button" onclick="location.href='page1.html'">
+      re-start
+    </button>
   </body>
   <script type="text/javascript">
     $(document).ready(function() {
