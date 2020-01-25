@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>final</title>
+<style>
+.kbota{
+  padding: 8px 30px;
+  background: #ffffaa;
+  font-size: 18px;
+  box-shadow: rgb(128, 128, 128) 3px 3px;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+<script type="text/javascript">
+var PassSec=0;   // 秒数カウント用変数
+function showPassage() {
+   PassSec++;   // カウントアップ
+   var msg = PassSec + "秒";   // 表示文作成
+   document.getElementById("PassageArea").innerHTML = msg;   // 表示更新
+}
+   PassageID = setInterval('showPassage()',1000);
+
+function kot(){
+  var an = document.getElementById('ans')
+  var ans = an.value
+  if(ans == '100' || ans == "１００"){
+    document.getElementById('kota').innerHTML = '正解！';
+    document.getElementById('next').innerHTML = '次へ進む';
+    clearInterval( PassageID );
+    var ik = [25.938287, 29.685059];
+    var map = L.map('map').setView(ik, 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+    }).addTo(map);
+
+
+   }else{
+      document.getElementById('kota').innerHTML = '違うんじゃない？'
+  }
+}
+
+</script>
+
+</head>
+
+<body  bgcolor="F8E0E0">
+  <div id="mai">
+<h2><div class="daimei">Q6:繁栄したテーベは『イリアス』の中で何と讃えられたでしょうか？</div></h2>
+</div>
+  <p><input type="text" id="ans" placeholder="90~110間の数字が入ります">の塔門を持つ都<input type="button" onclick="kot()" value="答える"></p>
+  <p>この問題の経過時間<div id="PassageArea">0秒</div></p>
+  <h3><div id="kota"></div></h3>
+		<div id="map" style="width: 600px; height: 400px;"></div>
+<br><br>
+<a href="final8.html"><div id="next"></div></a>
+</body>
+
+</html>

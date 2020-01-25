@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>final</title>
+  <style>
+  </style>
+  </head>
+  <body  bgcolor="F8E0E0">
+  <input type="button" onclick="wr();" value="終了！！"></input></p>
+　　　<h1 id="depict"></h1>
+<a href="final1.html"><p id="ret"></p></a>
+<a href="final9.html"><p id="kuj"></p></a>
+    <script type="text/javascript">
+
+    var position = 0;
+    function wr() {
+
+      var display = document.getElementById("depict").innerText;
+      var str = 'お疲れ様でした！';
+
+      display = display + str.charAt(position);
+      document.getElementById("depict").innerText = display;
+      if (position < str.length) {
+        setTimeout(wr, 850);
+      }
+      position++;
+
+      document.getElementById('ret').innerHTML = 'TOPへ戻る'
+      document.getElementById('kuj').innerHTML = '行き先ルーレットはここから'
+    }
+    </script>
+</body>
+</html>

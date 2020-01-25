@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>final</title>
+<style>
+.kbota{
+  padding: 8px 30px;
+  background: #77ffff;
+  font-size: 18px;
+}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+<script type="text/javascript">
+var PassSec=0;
+function showPassage() {
+   PassSec++;
+   var msg = PassSec + "秒";
+   document.getElementById("PassageArea").innerHTML = msg;
+}
+   PassageID = setInterval('showPassage()',1000);
+
+function ng(){
+  document.getElementById('kota').innerHTML = '違うんじゃない？'
+}
+
+function ok() {
+  document.getElementById('kota').innerHTML = '正解！'
+  document.getElementById('next').innerHTML = '次へ進む';
+  clearInterval( PassageID );
+
+  var ik = [44.1694, 145.231018];
+  var map = L.map('map').setView(ik, 10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+  }).addTo(map);
+
+  L.marker(ik).addTo(map);
+
+ document.getElementById('kai').innerHTML = "アイヌ語の「シリエトク」が名前の由来となっています"
+}
+
+</script>
+
+</head>
+
+<body  bgcolor="F8E0E0">
+  <div id="mai">
+<h2><div class="daimei">Q3:「知床」とはアイヌ語でどういう意味でしょうか？</div></h2>
+</div>
+  <input type="button" class="kbota" value="森の果て" onClick="ng()"><br>
+  <input type="button" class="kbota" value="川の果て" onClick="ng()"><br>
+  <input type="button" class="kbota" value="海の果て" onClick="ng()"><br>
+  <input type="button" class="kbota" value="空の果て" onClick="ng()"><br>
+  <input type="button" class="kbota" value="地の果て" onClick="ok()"><br>
+<p>経過時間<div id="PassageArea">0秒</div></p>
+  <h3><div id="kota"></div></h3>
+		<div id="map" style="width: 600px; height: 400px;"></div>
+    <h2 id="kai"></h2>
+<br><br>
+<a href="final5.html"><div id="next"></div></a>
+</body>
+
+</html>

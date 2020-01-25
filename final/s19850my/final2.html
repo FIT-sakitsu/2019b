@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>final</title>
+<style>
+.kbota{
+  padding: 8px 30px;
+  background: #77ffff;
+  font-size: 18px;
+}
+</style>
+<script type="text/javascript">
+var PassSec=0;   // 秒数カウント用変数
+function showPassage() {
+   PassSec++;   // カウントアップ
+   var msg = PassSec + "秒";   // 表示文作成
+   document.getElementById("PassageArea").innerHTML = msg;   // 表示更新
+}
+   PassageID = setInterval('showPassage()',1000);
+
+function sen(){
+  var x = "";
+   var main =["579","883","1121","1356"];
+   for(var n = 0; n < main.length ; n = n + 1) {
+     x = x + "<li>" + main[n] + "</li>";
+   }
+   document.getElementById('hints').innerHTML = x;
+ }
+
+function kot(){
+  var an = document.getElementById('ans')
+  var ans = an.value
+  if(ans == '1121'){
+    document.getElementById('kota').innerHTML = '正解！';
+    document.getElementById('next').innerHTML = '次へ進む';
+    clearInterval( PassageID );
+
+  }else{
+      document.getElementById('kota').innerHTML = '違うんじゃない？'
+  }
+}
+
+</script>
+
+</head>
+
+<body  bgcolor="F8E0E0">
+  <div id="mai">
+<h2><div class="daimei">Q1:2020年1月の時点でいくつの世界遺産が登録されているでしょう？</div></h2>
+</div>
+  <input type="button" onclick="sen()" value="ヒントを表示する">
+  <div id="hints"></div>
+  <p><input type="text" id="ans" placeholder="半角入力">個<input type="button" onclick="kot()" value="答える"></p>
+  <p>この問題の経過時間<div id="PassageArea">0秒</div></p>
+  <h3 id="kota"></h3>
+<br><br>
+<a href="final3.html"><div id="next"></div></a>
+</body>
+
+</html>

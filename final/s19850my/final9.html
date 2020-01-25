@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>final</title>
+    <script>
+      function ura() {
+        var basyo = [
+          '知床',
+          'タージ・マハル',
+          'アウシュヴィッツ強制収容所',
+          'バチカン市国',
+          '万里の長城',
+          '姫路城',
+          'ナミブ砂漠',
+          'キリマンジャロ国立公園',
+          'マチュ・ピチュ',
+          '自由の女神像',
+          'ベルンの旧市街',
+          'エフェソス',
+          'バビロン',
+        ]
+        var i = Math.floor(Math.random() * 13)
+        alert('これだ！')
+        document.getElementById('iki').innerHTML = basyo[i]
+      }
+    </script>
+  </head>
+
+  <body bgcolor="F8E0E0">
+    <h1>行き先決め</h1>
+    <br />
+    <button onclick="ura();">決める</button>
+    <h2 id="iki"></h2>
+    <br /><br /><br />
+    <a href="final1.html"><p>TOPへ戻る</p></a>
+  </body>
+</html>
