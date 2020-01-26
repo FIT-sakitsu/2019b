@@ -1,0 +1,33 @@
+<script type="text/javascript">
+
+function show() {
+    var FruitPrice =  {"林檎":128,
+                       "早生蜜柑":380,
+                       "メロン":580,
+                       "苺　":490};
+
+
+
+    for (var FruitName in FruitPrice) {
+            document.getElementById("kani").innerHTML
+                += FruitName
+                   + " ： "
+                   + FruitPrice[FruitName]
+                   + "円"
+                   + "<br>";
+
+    }
+}
+
+
+</script>
+
+<div style="background-color : #FFC7AF; padding : 40px 40px 0px;">
+    <form>
+
+            あなたはお母さんに買い物をするように言われました。千円以内で買うとしたら、何を買いますか？
+            <input type="button" value="果物売り場を見てみる" onClick="show()">
+
+        <div id="kani" style="background-color : #FFC7AF; width : 400px;"></div>
+    </form>
+</div>
